@@ -10,11 +10,14 @@ body{
 
 header {
   border-bottom: 1px solid seashell;
+  background-color: black;
   height:69px;
   width:100%;
   display:flex;
   justify-content: space-between;
   align-items:center;
+  position:fixed;
+  z-index:2;
 }
 
 header img{
@@ -30,6 +33,11 @@ header nav span{
 .main {
   width:1200px;
   margin: auto;
+}
+
+.main, footer{
+  position:relative;
+  top:69px;
 }
 
 #mission {
@@ -59,4 +67,41 @@ header nav span{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.tea-type span {
+  display:block;
+}
+
+#locations{
+  height:500px;
+  background-image: url('../images/img-locations-background.jpg');
+  padding-top:70px;
+  margin-top:50px;
+}
+
+.location-box{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+}
+.boxes-content{
+  background-color:black;
+  width: 300px;
+  opacity: 1;
+  padding: 10px;
+  margin:15px 20px 0 20px;
+}
+
+.contact{
+  height: 200px;
+}
+
+footer{
+  text-align:left;
+}
+
+footer h5{
+  margin-left:10px;
 }
